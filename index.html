@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Healthy Food - Keranjang Belanja</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <style>
     body {
@@ -14,14 +14,31 @@
     html {
       scroll-behavior: smooth;
     }
+    .hero-section {
+      background: olive;
+      background-size: cover;
+      background-position: center;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .tentang-section {
+      background-color: rgb(45, 63, 36);
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    .contact-section {
+      background-color: olive;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
   </style>
 </head>
-<body class="bg-[#e3d7d7] text-[#6b621a]">
+<body class="bg beige text olive">
 
-  <!-- Navigation Bar -->
-  <nav class="bg-[#e3d7d7] flex justify-between items-center px-6 py-4 text-xs sm:text-sm font-semibold tracking-wide">
+  <!-- Navigation -->
+  <nav class="bg beige flex justify-between items-center px-6 py-4 text-xs sm:text-sm font-semibold tracking-wide">
     <ul class="flex gap-8"></ul>
-    <div class="text-2xl font-normal text-[#6b621a]">HEALTHY FOOD</div>
+    <div class="text-2xl font-normal text olive">HEALTHY FOOD</div>
     <ul class="flex gap-8">
       <li><a class="hover:underline" href="#HOME">HOME</a></li>
       <li><a class="hover:underline" href="#TENTANG-KAMI">TENTANG KAMI</a></li>
@@ -30,10 +47,10 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-[#a9b5c6] to-[#d9d1d1] flex flex-col sm:flex-row items-center justify-center gap-8 px-6 py-12" id="HOME">
+  <section id="HOME" class="hero-section flex flex-col sm:flex-row items-center justify-center gap-8 px-6">
     <div class="flex justify-center sm:justify-start">
-      <div class="rounded-[100px] border-2 border-[#6b621a] overflow-hidden w-56 h-72 sm:w-64 sm:h-80 relative">
-        <img alt="Portrait of a woman" class="object-cover w-full h-full" src="https://beritajatim.com/wp-content/uploads/2024/09/kol.webp" />
+      <div class="rounded-[100px] border-2 border olive overflow-hidden w-56 h-72 sm:w-64 sm:h-80 relative">
+        <img src="https://beritajatim.com/wp-content/uploads/2024/09/kol.webp" alt="Portrait of a woman" class="object-cover w-full h-full" />
       </div>
     </div>
     <div class="max-w-xl text-white">
@@ -43,20 +60,20 @@
       <p class="text-xs sm:text-sm font-light mb-6 max-w-md">
         let's eat healthy food with cabbage and tofu
       </p>
-      <a href="#TENTANG-KAMI" class="bg-[#d6c97a] text-black text-xs sm:text-sm font-semibold uppercase tracking-widest px-6 py-2 rounded-sm hover:bg-[#5a5415] transition">
+      <a href="#TENTANG-KAMI" class="bg lightgoldenrodyellow text-black text-xs sm:text-sm font-semibold uppercase tracking-widest px-6 py-2 rounded-sm hover:bg darkgoldenrod transition">
         VIEW OUR MENU
       </a>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="TENTANG-KAMI" class="py-6 px-6 flex flex-col sm:flex-row items-center justify-center gap-12 bg-[#d9c6c6]">
+  <!-- Tentang Kami Section -->
+  <section id="TENTANG-KAMI" class="tentang-section px-6 flex flex-col sm:flex-row items-center justify-center gap-12">
     <div class="flex-1 p-8 sm:p-12 flex flex-col justify-center">
-      <button class="text-[grid] text-xs sm:text-sm font-semibold uppercase tracking-widest px-6 py-2 rounded-sm transition mb-4">
+      <button class="text-xs sm:text-sm font-semibold uppercase tracking-widest px-6 py-2 rounded-sm transition mb-4">
         TENTANG KAMI
       </button>
-      <h4 class="text-xs sm:text-sm font-light leading-relaxed text-[#6b621a] max-w-md mb-2">Kenapa memilih kol isi tahu???</h4>
-      <p class="text-xs sm:text-sm font-light leading-relaxed text-[#6b621a] max-w-md">
+      <h4 class="text-xs sm:text-sm font-light leading-relaxed text olive max-w-md mb-2">Kenapa memilih kol isi tahu???</h4>
+      <p class="text-xs sm:text-sm font-light leading-relaxed text olive max-w-md">
         Dalam dunia kuliner yang semakin sadar akan kesehatan, memilih menu yang bergizi, 
         lezat, dan tetap sederhana menjadi pilihan banyak orang. Salah satu menu yang mulai mencuri perhatian 
         adalah kol isi tahu. Makanan ini tidak hanya menggoda dari segi rasa, tapi juga membawa banyak manfaat 
@@ -64,21 +81,13 @@
       </p>
     </div>
 
-    <!-- Product List -->
     <div class="flex-1 flex justify-center items-center mt-8 sm:mt-0">
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden w-72 border border-[#d6c97a]">
-        <img 
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJKyKHde_Z9QUQKENqLXqfVjg-Yrwm2yE7sg&s" 
-          alt="Kol Isi Tahu" 
-          class="w-full"
-        />
-        <div class="p-4 text-center text-[#6b621a]">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden w-72 border border lightgoldenrodyellow">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJKyKHde_Z9QUQKENqLXqfVjg-Yrwm2yE7sg&s" alt="Kol Isi Tahu" class="w-full" />
+        <div class="p-4 text-center text olive">
           <h4 class="text-lg font-semibold mb-1">Kol Isi Tahu</h4>
           <p class="text-sm mb-3">Rp6.000</p>
-          <button 
-            onclick="addToCart('Kol Isi Tahu', 6000)" 
-            class="bg-[#6b621a] text-[#d6c97a] px-4 py-2 text-xs font-semibold tracking-widest rounded-md hover:bg-[#5a5415] transition"
-          >
+          <button onclick="addToCart('Kol Isi Tahu', 6000)" class="bg olive text lightgoldenrodyellow px-4 py-2 text-xs font-semibold tracking-widest rounded-md hover:bg darkgoldenrod transition">
             Tambah ke Keranjang
           </button>
         </div>
@@ -86,124 +95,119 @@
     </div>
   </section>
 
- <!-- Bagian keranjang -->
-<section id="KERANJANG" class="max-w-3xl mx-auto my-12 px-6">
-  <h2 class="text-2xl font-semibold mb-4">🛒 Keranjang Belanja</h2>
-  <div id="cart" class="bg-white border border-[#6b621a] rounded-lg p-4 text-[#6b621a] min-h-[100px]">
-    <p class="text-center text-sm text-gray-500">Keranjang kosong</p>
-  </div>
-</section>
+  <!-- Keranjang -->
+  <section id="KERANJANG" class="max-w-3xl mx-auto my-12 px-6">
+    <h2 class="text-2xl font-semibold mb-4">🛒 Keranjang</h2>
+    <div id="cart" class="bg-white border border olive rounded-lg p-4 text olive min-h-[100px]">
+      <p class="text-center text-sm text-gray-500">Keranjang</p>
+    </div>
+  </section>
 
-<!-- Contact Section -->
-<section class="bg-[#6b621a] text-[#d6c97a] px-6 py-12">
-  <div class="max-w-5xl mx-auto text-center mb-12">
-    <h3 class="text-3xl sm:text-4xl font-semibold mb-4">Hubungi Kami</h3>
-  </div>
-  <div class="grid grid-cols-2 sm:grid-cols-5 gap-8 max-w-4xl mx-auto text-center">
-    <!-- TikTok -->
-    <a href="https://www.tiktok.com/@healthyfoods303?_t=ZS-8wCQXTQvzuC&_r=1" target="_blank" class="flex flex-col items-center hover:text-white transition">
-      <i class="fab fa-tiktok text-4xl sm:text-5xl"></i>
-      <p class="mt-2 text-sm">TikTok</p>
-    </a>
+  <!-- Contact -->
+  <section class="contact-section text lightgoldenrodyellow px-6">
+    <div class="max-w-5xl mx-auto text-center mb-12">
+      <h3 class="text-3xl sm:text-4xl font-semibold mb-4">Media Sosial</h3>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-8 max-w-4xl mx-auto text-center">
+      <a href="https://www.tiktok.com/@healthyfoods303?_t=ZS-8wCQXTQvzuC&_r=1" target="_blank" class="flex flex-col items-center hover:text-white transition">
+        <i class="fab fa-tiktok text-4xl sm:text-5xl"></i>
+        <p class="mt-2 text-sm">TikTok</p>
+      </a>
+      <a href="https://www.instagram.com/h.ealthyfoood?igsh=cTRtcGY0cDdxdXhv" target="_blank" class="flex flex-col items-center hover:text-white transition">
+        <i class="fab fa-instagram text-pink text-4xl sm:text-5xl"></i>
+        <p class="mt-2 text-sm">Instagram</p>
+      </a>
+      <a href="https://wa.me/625770224694?text=Halo%20saya%20tertarik%20dengan%20produk%20kol%20isi%20tahu" target="_blank" class="flex flex-col items-center transition">
+        <i class="fab fa-whatsapp text-green text-4xl sm:text-5xl"></i>
+        <p class="mt-2 text-sm text-lightgreen">WhatsApp</p>
+      </a>
+      <a href="https://youtube.com/@healthyyfoooddd?si=-DX-rGYfl2KlBR89" target="_blank" class="flex flex-col items-center transition">
+        <i class="fab fa-youtube text-red text-4xl sm:text-5xl"></i>
+        <p class="mt-2 text-sm text-lightcoral">YouTube</p>
+      </a>
+    </div>
+  </section>
 
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/h.ealthyfoood?igsh=cTRtcGY0cDdxdXhv" target="_blank" class="flex flex-col items-center hover:text-white transition">
-      <i class="fab fa-instagram text-pink-500 text-4xl sm:text-5xl"></i>
-      <p class="mt-2 text-sm">Instagram</p>
-    </a>
+  <!-- Script -->
+  <script>
+    let cartItems = [];
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/625770224694" target="_blank" class="flex flex-col items-center transition">
-      <i class="fab fa-whatsapp text-green-500 text-4xl sm:text-5xl"></i>
-      <p class="mt-2 text-sm text-green-300">WhatsApp</p>
-    </a>
-
-    <!-- YouTube -->
-    <a href="https://youtube.com/@healthyyfoooddd?si=-DX-rGYfl2KlBR89" target="_blank" class="flex flex-col items-center transition">
-      <i class="fab fa-youtube text-red-500 text-4xl sm:text-5xl"></i>
-      <p class="mt-2 text-sm text-red-400">YouTube</p>
-    </a>
-  </div>
-</section>
-
-<!-- Script -->
-<script>
-  let cartItems = [];
-
-  function addToCart(nama, harga) {
-    const existing = cartItems.find(item => item.nama === nama);
-    if (existing) {
-      existing.jumlah++;
-    } else {
-      cartItems.push({ nama, harga, jumlah: 1 });
-    }
-    tampilkanKeranjang();
-  }
-
-  function tambahJumlah(nama) {
-    const item = cartItems.find(i => i.nama === nama);
-    if (item) {
-      item.jumlah++;
+    function addToCart(nama, harga) {
+      const existing = cartItems.find(item => item.nama === nama);
+      if (existing) {
+        existing.jumlah++;
+      } else {
+        cartItems.push({ nama, harga, jumlah: 1 });
+      }
       tampilkanKeranjang();
     }
-  }
 
-  function kurangJumlah(nama) {
-    const item = cartItems.find(i => i.nama === nama);
-    if (item && item.jumlah > 1) {
-      item.jumlah--;
-    } else {
-      cartItems = cartItems.filter(i => i.nama !== nama);
-    }
-    tampilkanKeranjang();
-  }
-
-  function tampilkanKeranjang() {
-    const cartDiv = document.getElementById('cart');
-    if (cartItems.length === 0) {
-      cartDiv.innerHTML = '<p class="text-center text-sm text-gray-500">Keranjang kosong</p>';
-      return;
+    function tambahJumlah(nama) {
+      const item = cartItems.find(i => i.nama === nama);
+      if (item) {
+        item.jumlah++;
+        tampilkanKeranjang();
+      }
     }
 
-    let isi = "<ul class='space-y-4'>";
-    let total = 0;
+    function kurangJumlah(nama) {
+      const item = cartItems.find(i => i.nama === nama);
+      if (item && item.jumlah > 1) {
+        item.jumlah--;
+      } else {
+        cartItems = cartItems.filter(i => i.nama !== nama);
+      }
+      tampilkanKeranjang();
+    }
 
-    for (let item of cartItems) {
-      const subtotal = item.harga * item.jumlah;
-      total += subtotal;
+    function tampilkanKeranjang() {
+      const cartDiv = document.getElementById('cart');
+      if (cartItems.length === 0) {
+        cartDiv.innerHTML = '<p class="text-center text-sm text-gray-500">Keranjang kosong</p>';
+        return;
+      }
 
-      isi += `
-        <li class="flex justify-between items-center border-b pb-2">
-          <div>
-            <span class="font-medium">${item.nama}</span><br>
-            <span class="text-sm text-gray-600">
-              Rp${item.harga.toLocaleString('id-ID')} x ${item.jumlah} = 
-              <strong>Rp${subtotal.toLocaleString('id-ID')}</strong>
-            </span>
-          </div>
-          <div class="flex gap-2">
-            <button onclick="kurangJumlah('${item.nama}')" class="bg-[#d6c97a] text-[#6b621a] px-2 py-1 text-sm font-bold rounded hover:bg-[#c1b865]">−</button>
-            <button onclick="tambahJumlah('${item.nama}')" class="bg-[#d6c97a] text-[#6b621a] px-2 py-1 text-sm font-bold rounded hover:bg-[#c1b865]">+</button>
-          </div>
-        </li>
+      let isi = "<ul class='space-y-4'>";
+      let total = 0;
+
+      for (let item of cartItems) {
+        const subtotal = item.harga * item.jumlah;
+        total += subtotal;
+
+        isi += `
+          <li class="flex justify-between items-center border-b pb-2">
+            <div>
+              <span class="font-medium">${item.nama}</span><br>
+              <span class="text-sm text-gray-600">
+                Rp${item.harga.toLocaleString('id-ID')} x ${item.jumlah} = 
+                <strong>Rp${subtotal.toLocaleString('id-ID')}</strong>
+              </span>
+            </div>
+            <div class="flex gap-2">
+              <button onclick="kurangJumlah('${item.nama}')" class="bg lightgoldenrodyellow text olive px-2 py-1 text-sm font-bold rounded hover:bg darkgoldenrod">−</button>
+              <button onclick="tambahJumlah('${item.nama}')" class="bg lightgoldenrodyellow text olive px-2 py-1 text-sm font-bold rounded hover:bg darkgoldenrod">+</button>
+            </div>
+          </li>
+        `;
+      }
+
+      isi += `</ul>
+        <div class="mt-4 text-right font-semibold">Total: Rp${total.toLocaleString('id-ID')}</div>
+        <div class="mt-6 flex justify-end">
+           <button onclick="checkout()" class="bg olive text lightgoldenrodyellow px-6 py-2 text-sm font-semibold rounded hover:bg darkgoldenrod transition">
+            Checkout
+          </button>
+        </div>
       `;
+
+      cartDiv.innerHTML = isi;
     }
 
-    isi += `</ul>
-      <div class="mt-4 text-right font-semibold">Total: Rp${total.toLocaleString('id-ID')}</div>
-      <div class="mt-6 flex justify-end">
-        <button onclick="checkout()" class="bg-[#6b621a] text-[#d6c97a] px-6 py-2 text-sm font-semibold rounded hover:bg-[#5a5415] transition">
-          Checkout
-        </button>
-      </div>
-    `;
-
-    cartDiv.innerHTML = isi;
-  }
-
-  function checkout() {
-    alert("Terima kasih telah berbelanja! Pesanan Anda sedang diproses.");
-    cartItems = [];
-    tampilkanKeranjang();
-  }
-</script>
+    function checkout() {
+      alert("Terima kasih telah berbelanja! Pesanan Anda sedang diproses.");
+      cartItems = [];
+      tampilkanKeranjang();
+    }
+  </script>
+</body>
+</html>
